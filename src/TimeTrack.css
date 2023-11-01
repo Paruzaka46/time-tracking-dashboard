@@ -1,0 +1,62 @@
+:root {
+  /* Primary */
+  --blue: hsl(246, 80%, 60%);
+  --work-bg: hsl(15, 100%, 70%);
+  --play-bg: hsl(195, 74%, 62%);
+  --study-bg: hsl(348, 100%, 68%);
+  --exercise-bg: hsl(145, 58%, 55%);
+  --social-bg: hsl(264, 64%, 52%);
+  --self-care-bg: hsl(43, 84%, 65%);
+
+  /* Neutral */
+  --very-dark-blue: hsl(226, 43%, 10%);
+  --dark-blue: hsl(235, 46%, 20%);
+  --desaturated-blue: hsl(235, 45%, 61%);
+  --pale-blue: hsl(236, 100%, 87%);
+}
+
+.mode {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.track-cont {
+    color: white;
+    background-color: var(--dark-blue);
+    padding: 1.5rem;
+    z-index: 1;
+    border-radius: 15px;
+}
+
+.track-cont .upper-part {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.2rem;
+}
+
+.track-cont .upper-part h5 {
+    font-weight: 500;
+}
+
+.track-cont h1 {
+    font-weight: 300;
+    font-size: 45px;
+    margin-bottom: 5px;
+}
+
+.Work {
+    background-color: var(--work-bg);
+}
+
+.Work::after {
+    content: url(../public/images/icon-work.svg);
+    position: absolute;
+    top: -10px;
+    right: 15px;
+}
