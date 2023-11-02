@@ -1,5 +1,5 @@
 import { useState } from "react"
-import "./profile.css"
+import "./Profile.css"
 
 const Profile = ({onPick}) => {
     const [select, setSelect] = useState("daily")
