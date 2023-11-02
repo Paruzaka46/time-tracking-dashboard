@@ -8,8 +8,10 @@ const Profile = ({onPick}) => {
         <div className="profile-container">
             <div className="user">
                 <img src="/images/image-jeremy.png"/>
-                <p>report for</p>
-                <h2>Jeremy Robson</h2>
+                <div className="profile-content">
+                    <p>Report for</p>
+                    <h2>Jeremy Robson</h2>
+                </div>
             </div>
             <ul>
                 <li>

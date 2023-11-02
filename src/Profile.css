@@ -40,7 +40,6 @@
 .user p {
     font-size: 15px;
     font-weight: 300;
-    /* margin-bottom: 5px; */
     color: var(--pale-blue);
 }
 
@@ -66,3 +65,31 @@ ul li a {
     color: var(--desaturated-blue)
 }
 
+@media screen and (max-width: 768px) {
+    .user {
+        display: flex;
+        align-items: center;
+        padding: 2.5rem;
+    }
+
+    .user img {
+        margin-bottom: 0;
+        margin-right: 1rem;
+    }
+
+    .user p {
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+
+    .user h2 {
+        font-size: 25px;
+    }
+
+    ul {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1.5rem 2.5rem;
+    }
+
+}

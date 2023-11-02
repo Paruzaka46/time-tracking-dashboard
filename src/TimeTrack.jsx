@@ -8,8 +8,10 @@ const TimeTrack = ({title, current, previous}) => {
                     <h5 style={{fontSize: "18px"}}>{title}</h5>
                     <input type="image" src="/images/icon-ellipsis.svg"/>
                 </div>
-                <h1>{current} hrs</h1>
-                <p>last Week - <span>{previous}</span>hrs</p>
+                <div className="lower-part">
+                    <h1>{current}hrs</h1>
+                    <p>last Week - <span>{previous}</span>hrs</p>
+                </div>
             </div> 
         </div>
     )
